@@ -1,0 +1,359 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*---------------- start header style--------------- */
+.header-container {
+    background-color: #161616;
+    border-radius: 30px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.header-info {
+    width: 100%;
+    margin: 100px 24px 100px 100px;
+}
+
+.header-heading {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+    color: #FFFFFF;
+    margin: 10px 30px 30px 0px;
+}
+
+.header-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-top: 0;
+}
+
+.header-img {
+    width: 100%;
+    margin: 40px 80px 0px 0px;
+}
+
+.header-img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+main {
+    margin: 100px 0px 100px 0px;
+}
+
+.main-container {
+    border-radius: 30px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+
+.pages {
+    width: 250px;
+    height: 312px;
+    background-color: #161616;
+    border-radius: 10px;
+    margin-right: 24px;
+}
+
+.page-button {
+    display: block;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    color: #161616;
+    border-radius: 10px;
+    margin: 30px 30px 0px 30px;
+    text-align: center;
+    padding: 20px 40px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.page-button:hover {
+    
+    color: #FFFFFF;
+    background-color: #DD0000;
+}
+
+.page-selected {
+    background-color: #DD0000;
+    color: #FFFFFF;
+}
+
+/* -----------------------
+ End Aside section style
+--------------------------*/
+
+/* -----------------------
+ Start blogs style 
+--------------------------*/
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+}
+.blog img{
+    width: 210px;
+}
+.blog {
+    height: fit-content;
+}
+
+
+
+.fa-clock {
+    margin-right: 10px;
+}
+
+.fa-comment-dots {
+    margin-right: 10px;
+}
+
+
+/* -----------------------
+ end blogs style 
+--------------------------*/
+
+/*----------------
+ end main section style 
+ --------------- */
+/* tablet button design  */
+.tab {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.view-button {
+    background-color: #DD0000;
+    border-radius: 5px;
+    padding: 12px 30px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    border: 0;
+    margin-top: 30px;
+    display: none;
+}
+
+footer {
+    width: 100%;
+    background-color: #161616;
+    color: #FFFFFF;
+}
+
+footer h2 {
+    text-align: center;
+    padding: 50px 0px 30px 0px;
+    margin: 0px;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+hr {
+    width: 80%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 50px;
+
+}
+
+.footer-menu {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.menu {
+    margin: 20px;
+}
+
+.footer-icon {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+
+.icon-style {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin: 0 20px 0 20px;
+}
+
+/*----------------
+  end footer style 
+  --------------- */
+
+/*---------------
+   Media Queries  
+   ----------------*/
+
+/* Mobile Devices */
+@media only screen and (max-width: 688px) {
+    .header-container {
+        width: 80%;
+        flex-direction: column;
+        padding: 40px 20px 0px 20px;
+        align-items: center;
+
+    }
+
+    .header-info {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .header-heading {
+        font-size: 35px;
+        line-height: 50px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .header-text {
+        font-size: 14px;
+        line-height: 24px;
+        margin: 30px 0 0 0;
+        text-align: center;
+    }
+
+    .button-live {
+        margin: 30px 0 30px 0;
+    }
+
+    .header-img {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .header-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    main {
+        margin: 50px 0px 100px 0px;
+    }
+
+    .main-container {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pages {
+        width: 312px;
+        height: 312px;
+        background-color: #161616;
+        border-radius: 10px;
+        margin: 0 0 50px 0;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 24px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+/* Tablet Devices  */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+
+    .header-container{
+        width: 100%;
+    } 
+    .header-info {
+        width: 100%;
+        margin: 50px 24px 50px 50px;
+    }
+    .header-heading {
+        font-size: 40px;
+        line-height: 50px;
+        margin: 10px 30px 25px 0px;
+    }
+    .header-text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .header-img {
+        width: 100%;
+        margin: 20px 5px 0px 0px;
+    }
+
+
+
+    main {
+        margin: 0;
+    }
+
+    .main-container {
+        border-radius: 30px;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pages {
+        width: 100%;
+        height: 150px;
+        background-color: #FFFFFF;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+    .page-button {
+        display: inline-block; 
+        border: 3px solid #E8E8E8;
+        margin: 0;
+        text-align: center;
+    }
+    .page-selected {
+        border: 3px solid #E8E8E8;
+    }
+    
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+    }
+    .view-button {
+        display:inline-block !important;
+
+    }
+    footer{
+        width: 100%;
+    }
+    .footer-menu{
+        flex-wrap: wrap;
+    }
+}
+
